@@ -14,6 +14,10 @@
 		24486F8725E5F25D00BFCD48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24486F8525E5F25D00BFCD48 /* LaunchScreen.storyboard */; };
 		24486F9225E5F8C200BFCD48 /* OrderCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24486F9125E5F8C200BFCD48 /* OrderCoffeeViewController.swift */; };
 		24486F9625E5F90700BFCD48 /* AddNewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24486F9525E5F90700BFCD48 /* AddNewOrderViewController.swift */; };
+		24486FA825E6C4B300BFCD48 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24486FA725E6C4B300BFCD48 /* WebService.swift */; };
+		24486FAC25E723D900BFCD48 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24486FAB25E723D900BFCD48 /* Order.swift */; };
+		24486FB125E7294B00BFCD48 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24486FB025E7294B00BFCD48 /* OrderViewModel.swift */; };
+		247269E925E767C700070687 /* AddNewOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247269E825E767C700070687 /* AddNewOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		24486F8825E5F25D00BFCD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24486F9125E5F8C200BFCD48 /* OrderCoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoffeeViewController.swift; sourceTree = "<group>"; };
 		24486F9525E5F90700BFCD48 /* AddNewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewOrderViewController.swift; sourceTree = "<group>"; };
+		24486FA725E6C4B300BFCD48 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		24486FAB25E723D900BFCD48 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		24486FB025E7294B00BFCD48 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		247269E825E767C700070687 /* AddNewOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 		24486F7925E5F25A00BFCD48 /* CoffeeOrderMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				24486FAF25E7293200BFCD48 /* ViewModels */,
+				24486FAA25E723C300BFCD48 /* Models */,
+				24486FA425E679C500BFCD48 /* Service */,
 				24486F9025E5F88E00BFCD48 /* Controller */,
 				24486F7A25E5F25A00BFCD48 /* AppDelegate.swift */,
 				24486F7C25E5F25A00BFCD48 /* SceneDelegate.swift */,
@@ -76,6 +87,31 @@
 				24486F9525E5F90700BFCD48 /* AddNewOrderViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		24486FA425E679C500BFCD48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				24486FA725E6C4B300BFCD48 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		24486FAA25E723C300BFCD48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24486FAB25E723D900BFCD48 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24486FAF25E7293200BFCD48 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				24486FB025E7294B00BFCD48 /* OrderViewModel.swift */,
+				247269E825E767C700070687 /* AddNewOrderViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247269E925E767C700070687 /* AddNewOrderViewModel.swift in Sources */,
+				24486FAC25E723D900BFCD48 /* Order.swift in Sources */,
 				24486F9625E5F90700BFCD48 /* AddNewOrderViewController.swift in Sources */,
 				24486F9225E5F8C200BFCD48 /* OrderCoffeeViewController.swift in Sources */,
 				24486F7B25E5F25A00BFCD48 /* AppDelegate.swift in Sources */,
+				24486FA825E6C4B300BFCD48 /* WebService.swift in Sources */,
+				24486FB125E7294B00BFCD48 /* OrderViewModel.swift in Sources */,
 				24486F7D25E5F25A00BFCD48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
