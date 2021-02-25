@@ -37,7 +37,7 @@ class AddNewOrderViewController: UIViewController, UITableViewDelegate, UITableV
            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
            //tap.cancelsTouchesInView = false
 
-           view.addGestureRecognizer(tap)
+        navigationController?.navigationBar.addGestureRecognizer(tap)
         self.coffeeSizesSegmentedViewController = UISegmentedControl(items: self.vm.sizes)
         self.coffeeSizesSegmentedViewController.translatesAutoresizingMaskIntoConstraints = false
         
