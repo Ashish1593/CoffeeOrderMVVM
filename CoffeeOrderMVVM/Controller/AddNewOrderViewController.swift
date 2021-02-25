@@ -35,9 +35,9 @@ class AddNewOrderViewController: UIViewController, UITableViewDelegate, UITableV
             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-           //tap.cancelsTouchesInView = false
+           tap.cancelsTouchesInView = false
 
-        navigationController?.navigationBar.addGestureRecognizer(tap)
+           view.addGestureRecognizer(tap)
         self.coffeeSizesSegmentedViewController = UISegmentedControl(items: self.vm.sizes)
         self.coffeeSizesSegmentedViewController.translatesAutoresizingMaskIntoConstraints = false
         
